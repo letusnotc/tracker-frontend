@@ -26,6 +26,8 @@ This project simulates a functional BitTorrent tracker with:
 # 🚀 Features
 
 ## 🟣 Backend (Node.js + Express + MongoDB)
+[🔗 Backend Repository](https://github.com/letusnotc/tracker-backend)
+
 - File model: name, size, infoHash, pieceCount, seeders, leechers  
 - Peer model: clientName, status, progress, timestamps  
 - Tracker APIs:
@@ -41,6 +43,8 @@ This project simulates a functional BitTorrent tracker with:
 ---
 
 ## 💠 Frontend (React + Vite)
+[🔗 Frontend Repository](https://github.com/letusnotc/tracker-frontend)
+
 - Modern animated UI  
 - Sidebar navigation (scroll-to-sections)
 - Search bar with file suggestions  
@@ -51,6 +55,7 @@ This project simulates a functional BitTorrent tracker with:
 - Swarm graph using Vis-Network
 - Realtime activity timeline
 - Canvas-based animated gradient background
+
 
 ---
 
