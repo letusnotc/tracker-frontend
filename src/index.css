@@ -1,0 +1,164 @@
+/*  
+====================================================
+ GLOBAL THEME VARIABLES (LIGHT + DARK MODE SUPPORT)
+====================================================
+*/
+
+:root {
+  --bg-main: #f5f5f5;
+  --bg-nav: #ffffff;
+  --text-main: #111;
+  --border-color: #ddd;
+}
+
+body.dark {
+  --bg-main: #121212;
+  --bg-nav: #1f1f1f;
+  --text-main: #e5e5e5;
+  --border-color: #444;
+  
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* 
+===============================================
+ GLOBAL BODY STYLING
+===============================================
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+/*
+===============================================
+ FORMS: INPUTS, SELECTS, BUTTONS
+===============================================
+*/
+
+input,
+select,
+button {
+  padding: 7px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-nav);
+  color: var(--text-main);
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/*
+===============================================
+ TABLES
+===============================================
+*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--bg-nav);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+th {
+  background-color: rgba(150, 150, 150, 0.15);
+}
+
+/*
+===============================================
+ SCROLLBARS (Better look)
+===============================================
+*/
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*
+===============================================
+ LINKS
+===============================================
+*/
+
+a {
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/*
+===============================================
+ SECTIONS & HEADINGS
+===============================================
+*/
+
+h1, h2, h3, h4 {
+  color: var(--text-main);
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/*
+===============================================
+ CARDS / CONTAINERS (OPTIONAL NICE EFFECT)
+===============================================
+*/
+
+.card {
+  padding: 15px;
+  background-color: var(--bg-nav);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+}
+
+/*
+===============================================
+ TRANSITIONS FOR SMOOTH THEME CHANGE
+===============================================
+*/
+
+body, nav, div, table, input, button {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
